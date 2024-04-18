@@ -1,0 +1,1 @@
+java -cp /home/pmccrone/code/Java3D/j3dcore.jar:/home/pmccrone/code/Java3D/j3dutils.jar:/home/pmccrone/code/Java3D/jogamp-fat.jar:/home/pmccrone/code/Java3D/vecmath.jar:/home/pmccrone/code/Java3D/visad.jar:.:bin VCPExplorer/VCPRPE
