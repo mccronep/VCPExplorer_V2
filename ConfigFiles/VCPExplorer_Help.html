@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>VCPExplorer Help</title>
+             
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+</head>
+  <body vlink="#551a8b" alink="#0000ee" link="#0000ee" text="#000000"
+ bgcolor="#c0c0c0">
+   
+<h2>VCPExplorer Help</h2>
+    
+<h3>Table of Contents<br>
+  </h3>
+  Layout<br>
+  Basic Usage<br>
+  Mouse Buttons<br>
+  Display Buttons<br>
+  VCP Controls<br>
+  Config Files<br>
+  FAQ<br>
+  <br>
+  <br>
+  <br>
+  <br>
+   
+<hr width="100%" size="2">  
+<h3>Layout</h3>
+   
+<div align="right"> 
+<div align="left"> </div>
+ 
+<div align="left"><br>
+  The VCPExplorer is a tool to aid in visualizing radar beam paths with respect
+ to the terrain surrounding the radar. &nbsp;The VCPExplorer consists of
+4  main parts: the Info Bar, the PPI Panel, the RHI Panel and the VCP Controls<br>
+  </div>
+  </div>
+  <br>
+  <img src="../Img/VCPExplorer_layout.gif" alt="" width="719"
+ height="449">
+  <br>
+  <br>
+  <br>
+  <br>
+   
+<hr width="100%" size="2">  
+<h3>Basic Usage</h3>
+   
+<div align="left"><br>
+  </div>
+  <br>
+  <br>
+  <u>Choose Radar</u>:<br>
+   
+<blockquote>Under the <i>File</i> selection of the menubar, choose the desired
+ radar<br>
+  </blockquote>
+  <br>
+  <u>Rotate Radial</u>:<br>
+   
+<blockquote>Once the VCPExplorer finishes loading (and this may take several
+ seconds to a few minutes, depending on the speed of your computer), place
+ your mouse on the end (away from center) of the <font color="#ff0000">RED
+   <font color="#000000">radial in the PPI Panel. &nbsp;Left-click on the
+  </font></font><font color="#ff0000">RED</font> dot and drag the dot around
+ the PPI. &nbsp;Notice the terrain (jagged line) in the RHI Panel change.<br>
+    <br>
+  </blockquote>
+  <u>Change Radar Beam Elevation Angles</u>:  
+<blockquote>In the VCP Controls, either select the desired elevation angle
+ or click on the  <img src="../Img/up.gif" alt="" width="24" height="24">
+   (up) and <img src="../Img/down.gif" alt="" width="24" height="24">
+   (down) arrows to change the radar beam elevation angle. &nbsp;Notice the
+ beam (curved line) in the RHI Panel change. &nbsp;Also, you can enter an
+elevation angle (even angles less than zero) in the "Enter Elev. Angle" box.
+&nbsp;The beam will not update until you <u><b>press enter</b></u>.<br>
+  </blockquote>
+  <br>
+  <u>View Beam Blockage</u>:<br>
+   
+<blockquote>Enter a value in the "Beam Blockage (Whole %)" box and <u><b>press
+ enter</b></u>. &nbsp;Then click on the "GC" button in the RHI Panel. &nbsp;After
+ a few seconds, you should see a grey transparent pattern on the PPI Panel.
+ &nbsp;These are areas where the radar beam is blocked greater than or equal
+ to the percent that you enterd in the box.<br>
+  </blockquote>
+  <br>
+  <br>
+   
+<hr width="100%" size="2">  
+<h3>Mouse Buttons</h3>
+   
+<div align="left"><br>
+  </div>
+  <br>
+  <br>
+  <u>Left Button</u>:<br>
+   
+<div align="right"><br>
+  </div>
+   
+<blockquote>      
+  <div align="left"><b>Click and drag</b> to manipulate. &nbsp;Used on: radar
+ radial (<font color="#ff0000">RED dot<font color="#000000">) </font></font>on
+ PPI Panel and constant height line (<font color="#33ff33">GREEN dot</font>)
+ on RHI Panel when the Height Underestimate LINE ("HL" button) is selected.<br>
+    <br>
+    <b>Shift+click and drag</b> to zoom in on the box created.<br>
+    <br>
+    </div>
+  </blockquote>
+  <u>Middle Button</u>:<br>
+   
+<blockquote><b>Click and drag</b> displays Azimuth and Range of the cursor's
+ location with respect to the radar. &nbsp;Also, the beam Height (<u><i>ASL</i></u>)at
+ the cursor's location is also displayed.<br>
+  </blockquote>
+   
+<div align="left"><br>
+  </div>
+  <u>Right Button</u>:<br>
+   
+<blockquote><b>Click and drag</b> repositions the display.<br>
+    <br>
+    <b>Shift+click and drag</b> up and down zooms in and out<br>
+  </blockquote>
+  <br>
+   
+<hr width="100%" size="2">  
+<h3>Display Buttons<br>
+  </h3>
+   
+<div align="left"><br>
+  </div>
+  <u>PPI Panel</u>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ <img src="../Img/VCPExplorer_PPIbuttons.gif" alt="" width="485"
+ height="35">
+  <br>
+  <br>
+   
+<blockquote><b>Reset</b>: &nbsp;Resets the display orientation<br>
+    <b>Rings</b>: &nbsp;Toggles the range rings on and off<br>
+    <br>
+  </blockquote>
+  <u>RHI Panel</u>: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img
+ src="../Img/VCPExplorer_RHIbuttons.gif" alt="" width="519" height="33">
+  <br>
+   
+<blockquote><b>Reset</b>: &nbsp;Resets the display orientation<br>
+    <b>GC</b>: &nbsp;Calculates and displays Ground Clutter (Beam Blockage)
+   <i>on the PPI Panel</i>. &nbsp;<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<u>Note</u>: the default is set for 50%
+ beam blockage. &nbsp;The user must enter a value into the <br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;"Beam Blockage (Whole %)" box and <u><b>press
+ enter</b></u> before they press the <b>GC</b> button.<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;*** Entering "101" will clear the Beam
+ Blockage from the PPI Panel. &nbsp;[Will fix]<br>
+    <b>Beams</b>: &nbsp;Toggles between single beam and all beams in the
+current  VCP<br>
+    <b>Label</b>: &nbsp;Toggles the elevation angle labels on and off<br>
+    <b>BW</b>: &nbsp;Toggles the beam width edges on and off<br>
+    <b>BF</b>: &nbsp;Toggles the beam fill on and off<br>
+    <b>HF</b>: &nbsp;Toggles on and off for the Height Underestimate "FILL"
+ display for the current VCP<br>
+    <b>HL</b>: &nbsp;Toggles on and off for the Height Underestimate "LINE"
+ display for the current VCP<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<u>Note</u>: When this is turned on,
+the  user can manipulate the constant height line (<font color="#33ff33">GREEN
+ line<font color="#000000">)<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;by dragging the </font></font><font
+ color="#33ff33">GREEN</font> dot on the far right up and down. &nbsp;The
+ sawtooth pattern will adjust<br>
+  </blockquote>
+  <br>
+  <br>
+   
+<hr width="100%" size="2">  
+<h3>VCP Controls</h3>
+   
+<div align="left"><br>
+  </div>
+  <br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img
+ src="../Img/VCPExplorer_VCPControls.gif" alt="" width="453"
+ height="113">
+  <br>
+  <br>
+  The VCP Controls area is where the user can select or enter an elevation
+ angle, change VCPs and enter the disred amount of beam blockage. &nbsp;<u>Note</u>:
+ the user must <b>press enter</b> for the entered values to take effect.<br>
+  <br>
+  <br>
+  <br>
+   
+<hr width="100%" size="2">  
+<h3>Config Files</h3>
+   
+<div align="left"><br>
+  </div>
+  <br>
+  The Config Files can be found in the "ConfigFiles" directory of your installation.
+ &nbsp;The files currently included are:<br>
+   
+<blockquote><b>88D_siteList.dat</b>: &nbsp;<br>
+       
+  <blockquote>The list of WSR-88D radar sites and respective information.
+ &nbsp;This is a TAB-DELIMETED file and should be backed up if any changes
+ are made to it. &nbsp;Since radar locations are rarely changed, this file
+ should be rarely altered.<br>
+    </blockquote>
+    <b>TDWR_siteList.dat</b>:<br>
+       
+  <blockquote>Like the <b>88D_siteList.dat</b> file but for TDWR sites<br>
+    </blockquote>
+    <b>vcpList.dat</b>:<br>
+       
+  <blockquote>This file contains two TAB-DELIMETED columns: the VCP identifier
+ (e.g., VCP11) and a COMMA-DELIMETED list of elevation angles. &nbsp;The
+VCPExplorer  uses these entries directly to label the respective parameters
+in the VCP  Controls area.<br>
+    </blockquote>
+    <b>VCPExplorer_Help.html</b>:<br>
+       
+  <blockquote>This document<br>
+    </blockquote>
+  </blockquote>
+  <br>
+  <br>
+  <br>
+  <br>
+   
+<hr width="100%" size="2">  
+<h3>FAQ<br>
+  </h3>
+   
+<div align="left"><br>
+  </div>
+  <br>
+  <br>
+  This is a working list of questions about the VCP Explorer. &nbsp;Feel
+free  to submit more questions to &lt;<i>kevin.manross@noaa.gov</i>&gt; and
+further updates of this program will try to include them.<br>
+  <br>
+  <br>
+Whoa, the terrain image in the PPI Display is blown up and unresponsive,
+what do I do?<br>
+<br>
+<blockquote>Haven't been able to track down this bug yet, sorry. &nbsp;Best
+thing to do is to reselect the radar.<br>
+</blockquote>
+<br>
+<br>
+<br>
+OK, everything appears to have loaded, but there's no terrain in the PPI
+Display<br>
+<blockquote>The image should appear if you middle click in the PPI Display.
+&nbsp;If that doesn't work, try reselecting the radar.<br>
+</blockquote>
+<br>
+<br>
+<br>
+  <br>
+  Why does the VCPExplorer take so long to load?  
+<blockquote>Currently the biggest reason is that the VCPExplorer must go
+through the entire terrain file (usually around&nbsp; 800,000 grid points)
+and calculate an elevation angle for each point. &nbsp;This allows for faster
+rendering of Beam Blockage. &nbsp;It is planned to cache the elevation angle
+points for each radar site in the terrain netCDF files to load faster.<br>
+    <br>
+  </blockquote>
+  <br>
+<br>
+  Why does dragging take so long after I use the <b>GC</b> button?<br>
+  <br>
+   
+<blockquote>Most likely this is due to graphics card issues. &nbsp;If your
+ graphics card <u><b>does not</b></u>: <br>
+       
+  <blockquote>support OpenGL, <br>
+  have OpenGL and 3D rendering drivers installed<br>
+    </blockquote>
+  then this will dramatically slow down the responsiveness of te program.<br>
+    <br>
+  </blockquote>
+  <br>
+  <br>
+<br>
+  I only have 2 mouse buttons, how do I get the AZ/Ran/Elevation display?<br>
+   
+<blockquote>I'm working on that<br>
+  </blockquote>
+  <br>
+  <br>
+<br>
+  <br>
+  Why is the beam height displayed "Above Sea Level "?<br>
+   
+<blockquote>I just though of this while writing the help menu and am looking
+ into it.<br>
+    <br>
+  </blockquote>
+  <br>
+  <br>
+<br>
+  What's with VCP12? &nbsp;When I turn on all the beams and beam widths and
+ beam fills, the lowest elevations are hard to figure out.<br>
+   
+<blockquote>This is partially a matter of trying to find a good way to depict
+ the overlapping that occurs with VCP12 and other VCPs that have much overlapping.
+ &nbsp;It is also an issue with the current build of Java2/3 and VisAD that
+ this program was written in. &nbsp;Once we work some bugs out, I have another
+ color/overlapping scheme in mind.<br>
+    <br>
+  </blockquote>
+  <br>
+<br>
+<br>
+  Speaking of programming languages, what is this program written in and
+what  about license issues?<br>
+   
+<blockquote>The VCPExplorer is written in Java&reg; for platform independence
+ and uses a Java package known as VisAD. &nbsp;VisAD is developed by the
+same  folks that made Vis5D.<br>
+    <br>
+  This program is distributed with the Sun Java2&reg; (1.4.2) JRE as well 
+as the Sun Java3D&reg; (Windows&reg;) or Blackdown Java3D&reg; (Linux) JRE.
+ &nbsp;Under Sun Licensing, the JRE's are freely distributable. &nbsp;VisAD
+ is covered under GPLA.<br>
+  </blockquote>
+  <br>
+  <br>
+ <br>
+</body>
+</html>
